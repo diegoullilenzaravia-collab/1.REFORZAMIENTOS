@@ -1,0 +1,56 @@
+# EJERCICIO 17: GESTION DE INFORMACION DE DOS USUARIOS
+
+# 1. Crear dos listas vacias
+usuario_1 = []
+usuario_2 = []
+
+# 2 y 3. Registrar los datos del primer usuario
+usuario_1.append("DIEGO")       # Nombre
+usuario_1.append("ULLILEN")     # Apellido paterno
+usuario_1.append(28)            # Edad
+usuario_1.append("ADMINISTRADOR") # Profesion
+
+# Registrar los datos del segundo usuario
+usuario_2.append("PIERO")
+usuario_2.append("VASQUEZ")
+usuario_2.append(23)
+usuario_2.append("CONTADOR")
+
+# Mostrar los datos registrados
+print("===== DATOS DE LOS USUARIOS =====")
+print("Usuario 1:", usuario_1)
+print("Usuario 2:", usuario_2)
+
+# 4. Sumar las edades de ambos usuarios
+suma_edades = usuario_1[2] + usuario_2[2]
+print("\nSuma de las edades:", suma_edades)
+
+# 5. Concatenar ambas listas
+lista_concatenada = usuario_1 + usuario_2
+print("\n===== LISTA CONCATENADA =====")
+print(lista_concatenada)
+
+# 6. Mostrar la lista en orden inverso
+print("\n===== LISTA EN ORDEN INVERSO =====")
+print(lista_concatenada[::-1])
+
+# 7. Eliminar la edad del primer usuario
+# y el apellido paterno del segundo usuario
+lista_concatenada.remove(usuario_1[2])
+lista_concatenada.remove(usuario_2[1])
+
+# 8. Actualizar la profesion del segundo usuario
+# La profesion del segundo usuario queda en el indice 5
+lista_concatenada[5] = "ECONOMISTA"
+
+# 9. Mostrar resultados finales
+print("\n===== RESULTADOS FINALES =====")
+
+print("Lista concatenada original:")
+print(usuario_1 + usuario_2)
+
+print("\nLista final modificada:")
+print(lista_concatenada)
+
+print("\nCantidad de elementos de la lista final:")
+print(len(lista_concatenada))
